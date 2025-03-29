@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://enxtur.github.io</id>
+    <title>Enkhtur Enkhbat Blog</title>
+    <updated>2025-03-29T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://enxtur.github.io"/>
+    <subtitle>Enkhtur Enkhbat Blog</subtitle>
+    <icon>https://enxtur.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome]]></title>
+        <id>https://enxtur.github.io/welcome</id>
+        <link href="https://enxtur.github.io/welcome"/>
+        <updated>2025-03-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hello and welcome to my personal blog! I'm Enkhtur Enkhbat, a software developer passionate about creating innovative solutions and sharing knowledge with the tech community.]]></summary>
+        <content type="html"><![CDATA[<p>Hello and welcome to my personal blog! I'm Enkhtur Enkhbat, a software developer passionate about creating innovative solutions and sharing knowledge with the tech community.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-to-expect">What to Expect<a href="https://enxtur.github.io/welcome#what-to-expect" class="hash-link" aria-label="Direct link to What to Expect" title="Direct link to What to Expect">​</a></h2>
+<p>This blog will be a space where I share:</p>
+<ul>
+<li>Technical tutorials and guides</li>
+<li>Insights from my software development journey</li>
+<li>Thoughts on technology and industry trends</li>
+<li>Personal projects and experiences</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="about-me">About Me<a href="https://enxtur.github.io/welcome#about-me" class="hash-link" aria-label="Direct link to About Me" title="Direct link to About Me">​</a></h2>
+<p>I'm a Senior Software Developer with experience in full-stack development, working primarily with:</p>
+<ul>
+<li>Frontend: React, Angular, TypeScript</li>
+<li>Backend: Node.js</li>
+<li>Databases: PostgreSQL, MongoDB, Redis</li>
+<li>DevOps: Docker, GitHub Actions</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stay-connected">Stay Connected<a href="https://enxtur.github.io/welcome#stay-connected" class="hash-link" aria-label="Direct link to Stay Connected" title="Direct link to Stay Connected">​</a></h2>
+<p>Feel free to connect with me on:</p>
+<ul>
+<li><a href="https://github.com/enxtur" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/enxtur/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+<li><a href="mailto:enxtur.mon@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+</ul>
+<p>I'm excited to share my knowledge and experiences with you. Stay tuned for more content!</p>
+<p><a href="https://docusaurus.io/docs/blog" target="_blank" rel="noopener noreferrer">Docusaurus blogging features</a> are powered by the <a href="https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog" target="_blank" rel="noopener noreferrer">blog plugin</a>.</p>
+<p>Here are a few tips you might find useful.</p>
+<p>Simply add Markdown files (or folders) to the <code>blog</code> directory.</p>
+<p>Regular blog authors can be added to <code>authors.yml</code>.</p>
+<p>The blog post date can be extracted from filenames, such as:</p>
+<ul>
+<li><code>2019-05-30-welcome.md</code></li>
+<li><code>2019-05-30-welcome/index.md</code></li>
+</ul>
+<p>A blog post folder can be convenient to co-locate blog post images:</p>
+<p><img decoding="async" loading="lazy" alt="Docusaurus Plushie" src="https://enxtur.github.io/assets/images/docusaurus-plushie-banner-a60f7593abca1e3eef26a9afa244e4fb.jpeg" width="1500" height="500" class="img_ev3q"></p>
+<p>The blog supports tags as well!</p>
+<p><strong>And if you don't want a blog</strong>: just delete this directory, and use <code>blog: false</code> in your Docusaurus config.</p>]]></content>
+        <author>
+            <name>Enkhtur Enkhbat</name>
+            <uri>https://enxtur.github.io</uri>
+        </author>
+        <category label="introduction" term="introduction"/>
+        <category label="welcome" term="welcome"/>
+    </entry>
+</feed>
