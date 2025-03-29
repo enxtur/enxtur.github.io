@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkenxtur_github_io=self.webpackChunkenxtur_github_io||[]).push([[885],{2937:e=>{e.exports=JSON.parse('{"tags":[{"label":"introduction","permalink":"/tags/introduction","count":1},{"label":"welcome","permalink":"/tags/welcome","count":1}]}')}}]);
