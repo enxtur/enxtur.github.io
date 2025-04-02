@@ -4,10 +4,41 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Sat, 29 Mar 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 03 Apr 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[I Bought a Raspberry Pi 5 – And Almost Regretted It]]></title>
+            <link>https://enxtur.github.io/2025/04/03/bought-raspberry-pi</link>
+            <guid>https://enxtur.github.io/2025/04/03/bought-raspberry-pi</guid>
+            <pubDate>Thu, 03 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[I bought a Raspberry Pi 5 – And Almost Regretted It]]></description>
+            <content:encoded><![CDATA[<p>I recently ordered a Raspberry Pi 5 from Temu, along with a microSD card, card reader, and micro HDMI cable, all for around $110. However, I made one big mistake—I didn’t buy a power supply. I thought it would be fun for my kids to see the naked circuit board, so I skipped buying a case. But I completely overlooked the fact that the Raspberry Pi 5 requires a USB-C power adapter capable of 5V/5A.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-search-for-power">The Search for Power<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#the-search-for-power" class="hash-link" aria-label="Direct link to The Search for Power" title="Direct link to The Search for Power">​</a></h2>
+<p>When my package arrived, I was excited—until I realized I had no way to power it. I searched my home and checked nearby stores, but the best I could find were standard USB adapters rated at 2.4A–3A. Even my EcoFlow power station couldn’t provide the required amperage.</p>
+<p>Then, a lightbulb moment. Car USB chargers usually have higher amperage! Since my EcoFlow has a car plug, I wondered if I could use a car USB adapter to power the Raspberry Pi. I asked ChatGPT whether EcoFlow could provide 5A through the car port, and it said yes. That gave me hope.</p>
+<p>I ran to my car and checked my USB converter, only to find it was rated at just 3A. Still, I didn’t give up. I rushed to a store that sells car accessories and found a 6A AC adapter on the shelf. On my way home, I kept wondering—can this really provide 5V/5A? I have very little knowledge about electricity. All I know is:</p>
+<blockquote>
+<p>Voltage × Amperage = Wattage</p>
+</blockquote>
+<p>That’s it.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="heartbreak--frustration">Heartbreak &amp; Frustration<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#heartbreak--frustration" class="hash-link" aria-label="Direct link to Heartbreak &amp; Frustration" title="Direct link to Heartbreak &amp; Frustration">​</a></h2>
+<p>Back home, I eagerly plugged everything in—but my Raspberry Pi didn’t start. I had no idea if the issue was with the EcoFlow or the car plug. It was a frustrating moment.</p>
+<p>I’ve worked with Raspberry Pi before, back in my previous company. I experimented with it, set it up as a DHCP server, connected it to CCTV cameras via LAN, and even used FFmpeg for car plate recognition with machine learning. But somehow, I overlooked those two tiny letters—5A.</p>
+<p>Now, I was stuck waiting for another power adapter to arrive from somewhere in China. I had planned to surprise my kids by showing them their very own computer, but now it seemed like that plan was ruined.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-unexpected-solution">The Unexpected Solution<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#the-unexpected-solution" class="hash-link" aria-label="Direct link to The Unexpected Solution" title="Direct link to The Unexpected Solution">​</a></h2>
+<p>As a last attempt, I carefully read every warning message on the screen. One of them caught my eye:</p>
+<blockquote>
+<p>Click the power button for low-power mode.</p>
+</blockquote>
+<p>Wait… WHAT?!</p>
+<p>This message was there all along? Seriously?!</p>
+<p>I clicked the power button, and boom—Raspberry Pi OS booted up! My screen lit up, and so did my heart.</p>
+<p>Of course, running in low-power mode meant it wouldn’t perform at full potential. But it was enough for some basic exploration, web browsing, and even listening to YouTube music through a Bluetooth speaker.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-small-but-meaningful-victory">A Small but Meaningful Victory<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#a-small-but-meaningful-victory" class="hash-link" aria-label="Direct link to A Small but Meaningful Victory" title="Direct link to A Small but Meaningful Victory">​</a></h2>
+<p>It wasn’t the perfect experience, but in the end, I made it work—and that was the little victory I needed.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://enxtur.github.io/welcome</link>
