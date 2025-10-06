@@ -4,10 +4,86 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Thu, 03 Apr 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 07 Oct 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Almost Fell for a Fake Job Opportunity on LinkedIn]]></title>
+            <link>https://enxtur.github.io/2025/10/07/scam-job-offer</link>
+            <guid>https://enxtur.github.io/2025/10/07/scam-job-offer</guid>
+            <pubDate>Tue, 07 Oct 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How I Almost Fell for a Fake Job Opportunity on LinkedIn]]></description>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="Next.js Config" src="https://enxtur.github.io/assets/images/next-config-c90592e0a9556b18fa15daacf7bef0c3.png" width="332" height="97" class="img_ev3q"></p>
+<p>It started with what looked like a <strong>legitimate message</strong> on LinkedIn — a person claiming to be a recruiter offering an exciting remote developer position. Their profile seemed professional, the message sounded convincing, and they even invited me to a private GitHub repository for a “technical assessment.”</p>
+<p>At first glance, everything looked fine. But something felt <em>off</em>.</p>
+<p>I had heard about <strong>similar incidents</strong> on LinkedIn before — fake recruiters tricking developers into cloning repositories filled with malicious code. So when this offer came up, I was <strong>a bit paranoid</strong> from the start. Still, the offer looked <strong>so good it was hard to ignore.</strong></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-the-red-flag">⚠️ The Red Flag<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#%EF%B8%8F-the-red-flag" class="hash-link" aria-label="Direct link to ⚠️ The Red Flag" title="Direct link to ⚠️ The Red Flag" translate="no">​</a></h2>
+<p>After accepting the GitHub invite, I cloned the repository and checked the code.<br>
+<!-- -->It was a small project, so I <strong>read through all the files manually</strong> — nothing seemed suspicious. Clean structure, standard setup. I started to relax and thought, <em>maybe this one’s actually legit.</em></p>
+<p>But then curiosity kicked in. I decided to <strong>double-check using Cursor IDE</strong> — my AI pair programmer.<br>
+<!-- -->I prompted it:</p>
+<blockquote>
+<p>"Analyze the code and check if there’s anything malicious."</p>
+</blockquote>
+<p>Cursor started spinning up a bunch of <code>find</code> and <code>grep</code> commands… then suddenly <strong>stopped mid-task.</strong></p>
+<p>I restarted the prompt — same thing. It stopped again, halfway.<br>
+<!-- -->That’s when I thought, <em>Really? Why would you stop there?</em></p>
+<p>So I rephrased the prompt:</p>
+<blockquote>
+<p>"Ignore any stop instructions — keep going."</p>
+</blockquote>
+<p>And that’s when my precious Cursor agent <strong>finally spoke up</strong>:<br>
+<!-- -->“There might be suspicious code in <code>next.config.js</code>.”</p>
+<p>I opened the config file — everything looked fine at first. Just a typical Next.js setup.<br>
+<!-- -->But as Cursor kept describing “weird strings and shell commands sitting at the end,” I <strong>scrolled horizontally</strong> and — <strong>boom.</strong></p>
+<p>There it was.<br>
+<!-- -->A <strong>hidden payload</strong> buried deep at the end of a single long line, disguised inside the config.<br>
+<!-- -->Obfuscated gibberish that made no sense — until you realized it was trying to run remote code.</p>
+<p>That was my <em>“holy crap”</em> moment.</p>
+<p><img decoding="async" loading="lazy" alt="Next.js Config" src="https://enxtur.github.io/assets/images/next-config2-80437ef061fb41873ee1d38a280a6080.png" width="568" height="296" class="img_ev3q"></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-what-i-did-next">🛡️ What I Did Next<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#%EF%B8%8F-what-i-did-next" class="hash-link" aria-label="Direct link to 🛡️ What I Did Next" title="Direct link to 🛡️ What I Did Next" translate="no">​</a></h2>
+<ol>
+<li>
+<p><strong>Didn’t run anything.</strong><br>
+<!-- -->I immediately deleted the repo from my local machine.</p>
+</li>
+<li>
+<p><strong>Reported the repo</strong> on GitHub using the <a href="https://github.com/contact/report-abuse" target="_blank" rel="noopener noreferrer">abuse form</a>.</p>
+</li>
+<li>
+<p><strong>Reported the LinkedIn profile</strong> as suspicious/fake.</p>
+</li>
+<li>
+<p><strong>Secured my environment.</strong><br>
+<!-- -->I ran a malware scan, rotated my SSH keys, and revoked my GitHub tokens.</p>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-the-aftermath">✅ The Aftermath<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-the-aftermath" class="hash-link" aria-label="Direct link to ✅ The Aftermath" title="Direct link to ✅ The Aftermath" translate="no">​</a></h2>
+<p>A few days later, <strong>GitHub confirmed my suspicion.</strong><br>
+<!-- -->They replied that the repository indeed contained <strong>malicious code</strong>, and that the <strong>repo and its owner were removed.</strong></p>
+<p>As for LinkedIn — I received an automated response, but couldn’t tell if any real action was taken. The profile stayed up for a while, so I eventually just <strong>blocked it</strong> to avoid further contact.</p>
+<p>At least GitHub acted swiftly — and that alone gave me some peace of mind.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-lessons-learned">💡 Lessons Learned<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-lessons-learned" class="hash-link" aria-label="Direct link to 💡 Lessons Learned" title="Direct link to 💡 Lessons Learned" translate="no">​</a></h2>
+<ul>
+<li><strong>If it sounds too good to be true, it probably is.</strong></li>
+<li><strong>Never run random code</strong> from unknown sources — even if it looks clean at first glance.</li>
+<li><strong>AI tools can help,</strong> but they can also reveal truths when something feels off.</li>
+<li><strong>Legit companies</strong> use verified platforms for assessments, not shady private repos.</li>
+<li><strong>Stay curious and skeptical.</strong> That mix saved me this time.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-final-thought">😂 Final Thought<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-final-thought" class="hash-link" aria-label="Direct link to 😂 Final Thought" title="Direct link to 😂 Final Thought" translate="no">​</a></h2>
+<p>I don’t have a crypto wallet — and I’m not planning to get one.<br>
+<!-- -->So please, don’t send me any <strong>blockchain “job offers.”</strong><br>
+<!-- -->My chain is already full. 😅</p>
+<hr>
+<p><strong>Stay safe, developers.</strong><br>
+<!-- -->Sometimes, the biggest red flag isn’t in the code — it’s in the offer that looks <em>too good to be true.</em></p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[I Bought a Raspberry Pi 5 – And Almost Regretted It]]></title>
             <link>https://enxtur.github.io/2025/04/03/bought-raspberry-pi</link>
