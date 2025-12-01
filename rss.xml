@@ -18,7 +18,7 @@
 <p>It started with what looked like a <strong>legitimate message</strong> on LinkedIn — a person claiming to be a recruiter offering an exciting remote developer position. Their profile seemed professional, the message sounded convincing, and they even invited me to a private GitHub repository for a “technical assessment.”</p>
 <p>At first glance, everything looked fine. But something felt <em>off</em>.</p>
 <p>I had heard about <strong>similar incidents</strong> on LinkedIn before — fake recruiters tricking developers into cloning repositories filled with malicious code. So when this offer came up, I was <strong>a bit paranoid</strong> from the start. Still, the offer looked <strong>so good it was hard to ignore.</strong></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-the-red-flag">⚠️ The Red Flag<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#%EF%B8%8F-the-red-flag" class="hash-link" aria-label="Direct link to ⚠️ The Red Flag" title="Direct link to ⚠️ The Red Flag" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-the-red-flag">⚠️ The Red Flag<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#%EF%B8%8F-the-red-flag" class="hash-link" aria-label="Direct link to ⚠️ The Red Flag" title="Direct link to ⚠️ The Red Flag" translate="no">​</a></h2>
 <p>After accepting the GitHub invite, I cloned the repository and checked the code.<br>
 <!-- -->It was a small project, so I <strong>read through all the files manually</strong> — nothing seemed suspicious. Clean structure, standard setup. I started to relax and thought, <em>maybe this one’s actually legit.</em></p>
 <p>But then curiosity kicked in. I decided to <strong>double-check using Cursor IDE</strong> — my AI pair programmer.<br>
@@ -43,40 +43,40 @@
 <p>That was my <em>“holy crap”</em> moment.</p>
 <p><img decoding="async" loading="lazy" alt="Next.js Config" src="https://enxtur.github.io/assets/images/next-config2-80437ef061fb41873ee1d38a280a6080.png" width="568" height="296" class="img_ev3q"></p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="️-what-i-did-next">🛡️ What I Did Next<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#%EF%B8%8F-what-i-did-next" class="hash-link" aria-label="Direct link to 🛡️ What I Did Next" title="Direct link to 🛡️ What I Did Next" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-what-i-did-next">🛡️ What I Did Next<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#%EF%B8%8F-what-i-did-next" class="hash-link" aria-label="Direct link to 🛡️ What I Did Next" title="Direct link to 🛡️ What I Did Next" translate="no">​</a></h2>
 <ol>
-<li>
+<li class="">
 <p><strong>Didn’t run anything.</strong><br>
 <!-- -->I immediately deleted the repo from my local machine.</p>
 </li>
-<li>
-<p><strong>Reported the repo</strong> on GitHub using the <a href="https://github.com/contact/report-abuse" target="_blank" rel="noopener noreferrer">abuse form</a>.</p>
+<li class="">
+<p><strong>Reported the repo</strong> on GitHub using the <a href="https://github.com/contact/report-abuse" target="_blank" rel="noopener noreferrer" class="">abuse form</a>.</p>
 </li>
-<li>
+<li class="">
 <p><strong>Reported the LinkedIn profile</strong> as suspicious/fake.</p>
 </li>
-<li>
+<li class="">
 <p><strong>Secured my environment.</strong><br>
 <!-- -->I ran a malware scan, rotated my SSH keys, and revoked my GitHub tokens.</p>
 </li>
 </ol>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-the-aftermath">✅ The Aftermath<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-the-aftermath" class="hash-link" aria-label="Direct link to ✅ The Aftermath" title="Direct link to ✅ The Aftermath" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-the-aftermath">✅ The Aftermath<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-the-aftermath" class="hash-link" aria-label="Direct link to ✅ The Aftermath" title="Direct link to ✅ The Aftermath" translate="no">​</a></h2>
 <p>A few days later, <strong>GitHub confirmed my suspicion.</strong><br>
 <!-- -->They replied that the repository indeed contained <strong>malicious code</strong>, and that the <strong>repo and its owner were removed.</strong></p>
 <p>As for LinkedIn — I received an automated response, but couldn’t tell if any real action was taken. The profile stayed up for a while, so I eventually just <strong>blocked it</strong> to avoid further contact.</p>
 <p>At least GitHub acted swiftly — and that alone gave me some peace of mind.</p>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-lessons-learned">💡 Lessons Learned<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-lessons-learned" class="hash-link" aria-label="Direct link to 💡 Lessons Learned" title="Direct link to 💡 Lessons Learned" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-lessons-learned">💡 Lessons Learned<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-lessons-learned" class="hash-link" aria-label="Direct link to 💡 Lessons Learned" title="Direct link to 💡 Lessons Learned" translate="no">​</a></h2>
 <ul>
-<li><strong>If it sounds too good to be true, it probably is.</strong></li>
-<li><strong>Never run random code</strong> from unknown sources — even if it looks clean at first glance.</li>
-<li><strong>AI tools can help,</strong> but they can also reveal truths when something feels off.</li>
-<li><strong>Legit companies</strong> use verified platforms for assessments, not shady private repos.</li>
-<li><strong>Stay curious and skeptical.</strong> That mix saved me this time.</li>
+<li class=""><strong>If it sounds too good to be true, it probably is.</strong></li>
+<li class=""><strong>Never run random code</strong> from unknown sources — even if it looks clean at first glance.</li>
+<li class=""><strong>AI tools can help,</strong> but they can also reveal truths when something feels off.</li>
+<li class=""><strong>Legit companies</strong> use verified platforms for assessments, not shady private repos.</li>
+<li class=""><strong>Stay curious and skeptical.</strong> That mix saved me this time.</li>
 </ul>
 <hr>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-final-thought">😂 Final Thought<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-final-thought" class="hash-link" aria-label="Direct link to 😂 Final Thought" title="Direct link to 😂 Final Thought" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-final-thought">😂 Final Thought<a href="https://enxtur.github.io/2025/10/07/scam-job-offer#-final-thought" class="hash-link" aria-label="Direct link to 😂 Final Thought" title="Direct link to 😂 Final Thought" translate="no">​</a></h2>
 <p>I don’t have a crypto wallet — and I’m not planning to get one.<br>
 <!-- -->So please, don’t send me any <strong>blockchain “job offers.”</strong><br>
 <!-- -->My chain is already full. 😅</p>
@@ -93,7 +93,7 @@
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="Raspberry Pi 5" src="https://enxtur.github.io/assets/images/rpi5-c9d7608289579bdde7036097baec0bb8.jpg" width="1792" height="1344" class="img_ev3q"></p>
 <p>I recently ordered a Raspberry Pi 5 from Temu, along with a microSD card, card reader, and micro HDMI cable, all for around $110. However, I made one big mistake—I didn’t buy a power supply.</p>
 <p>I thought it would be fun for my kids to see the naked circuit board, so I skipped buying a case. But I completely overlooked the fact that the Raspberry Pi 5 requires a USB-C power adapter capable of 5V/5A.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-search-for-power">The Search for Power<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#the-search-for-power" class="hash-link" aria-label="Direct link to The Search for Power" title="Direct link to The Search for Power" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-search-for-power">The Search for Power<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#the-search-for-power" class="hash-link" aria-label="Direct link to The Search for Power" title="Direct link to The Search for Power" translate="no">​</a></h2>
 <p>When my package arrived, I was excited—until I realized I had no way to power it. I searched my home and checked nearby stores, but the best I could find were standard USB adapters rated at 2.4A–3A. Even my EcoFlow power station couldn’t provide the required amperage.</p>
 <p>Then, a lightbulb moment. Car USB chargers usually have higher amperage! Since my EcoFlow has a car plug, I wondered if I could use a car USB adapter to power the Raspberry Pi. I asked ChatGPT whether EcoFlow could provide 5A through the car port, and it said yes. That gave me hope.</p>
 <p>I ran to my car and checked my USB converter, only to find it was rated at just 3A. Still, I didn’t give up. I rushed to a store that sells car accessories and found a 6A AC adapter on the shelf. On my way home, I kept wondering—can this really provide 5V/5A? I have very little knowledge about electricity. All I know is:</p>
@@ -101,11 +101,11 @@
 <p>Voltage × Amperage = Wattage</p>
 </blockquote>
 <p>That’s it.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="heartbreak--frustration">Heartbreak &amp; Frustration<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#heartbreak--frustration" class="hash-link" aria-label="Direct link to Heartbreak &amp; Frustration" title="Direct link to Heartbreak &amp; Frustration" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="heartbreak--frustration">Heartbreak &amp; Frustration<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#heartbreak--frustration" class="hash-link" aria-label="Direct link to Heartbreak &amp; Frustration" title="Direct link to Heartbreak &amp; Frustration" translate="no">​</a></h2>
 <p>Back home, I eagerly plugged everything in—but my Raspberry Pi didn’t start. I had no idea if the issue was with the EcoFlow or the car plug. It was a frustrating moment.</p>
 <p>I’ve worked with Raspberry Pi before, back in my previous company. I experimented with it, set it up as a DHCP server, connected it to CCTV cameras via LAN, and even used FFmpeg for car plate recognition with machine learning. But somehow, I overlooked those two tiny letters—5A.</p>
 <p>Now, I was stuck waiting for another power adapter to arrive from somewhere in China. I had planned to surprise my kids by showing them their very own computer, but now it seemed like that plan was ruined.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-unexpected-solution">The Unexpected Solution<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#the-unexpected-solution" class="hash-link" aria-label="Direct link to The Unexpected Solution" title="Direct link to The Unexpected Solution" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-unexpected-solution">The Unexpected Solution<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#the-unexpected-solution" class="hash-link" aria-label="Direct link to The Unexpected Solution" title="Direct link to The Unexpected Solution" translate="no">​</a></h2>
 <p>As a last attempt, I carefully read every warning message on the screen. One of them caught my eye:</p>
 <blockquote>
 <p>Click the power button for low-power mode.</p>
@@ -114,7 +114,7 @@
 <p>This message was there all along? Seriously?!</p>
 <p>I clicked the power button, and boom—Raspberry Pi OS booted up! My screen lit up, and so did my heart.</p>
 <p>Of course, running in low-power mode meant it wouldn’t perform at full potential. But it was enough for some basic exploration, web browsing, and even listening to YouTube music through a Bluetooth speaker.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="a-small-but-meaningful-victory">A Small but Meaningful Victory<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#a-small-but-meaningful-victory" class="hash-link" aria-label="Direct link to A Small but Meaningful Victory" title="Direct link to A Small but Meaningful Victory" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-small-but-meaningful-victory">A Small but Meaningful Victory<a href="https://enxtur.github.io/2025/04/03/bought-raspberry-pi#a-small-but-meaningful-victory" class="hash-link" aria-label="Direct link to A Small but Meaningful Victory" title="Direct link to A Small but Meaningful Victory" translate="no">​</a></h2>
 <p>It wasn’t the perfect experience, but in the end, I made it work—and that was the little victory I needed.</p>]]></content:encoded>
         </item>
         <item>
@@ -124,28 +124,28 @@
             <pubDate>Sat, 29 Mar 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Hello and welcome to my personal blog! I'm Enkhtur Enkhbat, a software developer passionate about creating innovative solutions and sharing knowledge with the tech community.]]></description>
             <content:encoded><![CDATA[<p>Hello and welcome to my personal blog! I'm Enkhtur Enkhbat, a software developer passionate about creating innovative solutions and sharing knowledge with the tech community.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-to-expect">What to Expect<a href="https://enxtur.github.io/welcome#what-to-expect" class="hash-link" aria-label="Direct link to What to Expect" title="Direct link to What to Expect" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-to-expect">What to Expect<a href="https://enxtur.github.io/welcome#what-to-expect" class="hash-link" aria-label="Direct link to What to Expect" title="Direct link to What to Expect" translate="no">​</a></h2>
 <p>This blog will be a space where I share:</p>
 <ul>
-<li>Technical tutorials and guides</li>
-<li>Insights from my software development journey</li>
-<li>Thoughts on technology and industry trends</li>
-<li>Personal projects and experiences</li>
+<li class="">Technical tutorials and guides</li>
+<li class="">Insights from my software development journey</li>
+<li class="">Thoughts on technology and industry trends</li>
+<li class="">Personal projects and experiences</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="about-me">About Me<a href="https://enxtur.github.io/welcome#about-me" class="hash-link" aria-label="Direct link to About Me" title="Direct link to About Me" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-me">About Me<a href="https://enxtur.github.io/welcome#about-me" class="hash-link" aria-label="Direct link to About Me" title="Direct link to About Me" translate="no">​</a></h2>
 <p>I'm a Senior Software Developer with experience in full-stack development, working primarily with:</p>
 <ul>
-<li>Frontend: React, Angular, TypeScript</li>
-<li>Backend: Node.js</li>
-<li>Databases: PostgreSQL, MongoDB, Redis</li>
-<li>DevOps: Docker, GitHub Actions</li>
+<li class="">Frontend: React, Angular, TypeScript</li>
+<li class="">Backend: Node.js</li>
+<li class="">Databases: PostgreSQL, MongoDB, Redis</li>
+<li class="">DevOps: Docker, GitHub Actions</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stay-connected">Stay Connected<a href="https://enxtur.github.io/welcome#stay-connected" class="hash-link" aria-label="Direct link to Stay Connected" title="Direct link to Stay Connected" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="stay-connected">Stay Connected<a href="https://enxtur.github.io/welcome#stay-connected" class="hash-link" aria-label="Direct link to Stay Connected" title="Direct link to Stay Connected" translate="no">​</a></h2>
 <p>Feel free to connect with me on:</p>
 <ul>
-<li><a href="https://github.com/enxtur" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-<li><a href="https://www.linkedin.com/in/enxtur/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-<li><a href="mailto:enxtur.mon@gmail.com" target="_blank" rel="noopener noreferrer">Email</a></li>
+<li class=""><a href="https://github.com/enxtur" target="_blank" rel="noopener noreferrer" class="">GitHub</a></li>
+<li class=""><a href="https://www.linkedin.com/in/enxtur/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a></li>
+<li class=""><a href="mailto:enxtur.mon@gmail.com" target="_blank" rel="noopener noreferrer" class="">Email</a></li>
 </ul>
 <p>I'm excited to share my knowledge and experiences with you. Stay tuned for more content!</p>]]></content:encoded>
             <category>Introduction</category>
