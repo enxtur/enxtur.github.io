@@ -4,10 +4,33 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Thu, 01 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 10 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Why I built interview-aloud]]></title>
+            <link>https://enxtur.github.io/2026/01/10/interview-aloud-tech</link>
+            <guid>https://enxtur.github.io/2026/01/10/interview-aloud-tech</guid>
+            <pubDate>Sat, 10 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[On interviews, speaking out loud, and sharing a small tool]]></description>
+            <content:encoded><![CDATA[<p>I've done a several interviews over the years. Technically I'm usually fine. I understand the problems, I know how to design systems, I can write code. But one thing kept showing up again and again. Explaining my thinking out loud was harder than it should be.</p>
+<p>I knew the answer in my head, but turning that into clear, structured speech under pressure was not natural for me. Especially in English. Sometimes I would realize after the interview that I actually knew the solution, I just didn't express it well.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-shadowing-approach">The Shadowing Approach<a href="https://enxtur.github.io/2026/01/10/interview-aloud-tech#the-shadowing-approach" class="hash-link" aria-label="Direct link to The Shadowing Approach" title="Direct link to The Shadowing Approach" translate="no">​</a></h2>
+<p>So instead of reading more articles or watching more interview videos, I tried something simpler. I started practicing speaking while solving problems. Literally talking to myself.</p>
+<p>This is basically the shadowing technique.</p>
+<p>Shadowing is usually used in language learning. You listen and speak at the same time, or with a very small delay. It forces your brain to process and produce language together. I applied the same idea to technical interviews. I would listen to a question or scenario and immediately start explaining my thoughts out loud, even if the explanation was messy at first.</p>
+<p>It felt uncomfortable. That was the point.</p>
+<p>Over time, something changed. I stopped freezing. I stopped trying to form perfect sentences in my head before speaking. My explanations became more linear. Not perfect, but good enough to communicate how I think.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-tool">The Tool<a href="https://enxtur.github.io/2026/01/10/interview-aloud-tech#the-tool" class="hash-link" aria-label="Direct link to The Tool" title="Direct link to The Tool" translate="no">​</a></h2>
+<p><a href="https://interview-aloud.tech/" target="_blank" rel="noopener noreferrer" class="">interview-aloud</a> is a small tool built around this idea. You hear a question and you respond out loud. No typing. No editing. Just speaking. You can replay yourself and notice where you ramble, where you skip steps, or where you actually sound clear.</p>
+<p>I built it mainly for myself. I used it while preparing for interviews and it helped to some extent. Not magically. Not instantly. But in a very practical way.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-im-sharing-it">Why I'm Sharing It<a href="https://enxtur.github.io/2026/01/10/interview-aloud-tech#why-im-sharing-it" class="hash-link" aria-label="Direct link to Why I'm Sharing It" title="Direct link to Why I'm Sharing It" translate="no">​</a></h2>
+<p>At some point I realized this problem is not unique to me. A lot of developers know their stuff but struggle to explain it verbally, especially non native English speakers. That's why I decided to make it public.</p>
+<p>I'm not monetizing it. At least not now. This is not a startup pitch. It's more like a utility that might help someone who has the same problem I had. If it helps one person explain themselves a bit better in an interview, that's already enough for me.</p>
+<p>I'll keep it simple, maybe improve it slowly, and see if people find it useful.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Happy New Year]]></title>
             <link>https://enxtur.github.io/2026/01/01/happy-new-year</link>
