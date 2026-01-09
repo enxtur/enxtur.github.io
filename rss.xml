@@ -4,10 +4,28 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Tue, 07 Oct 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Happy New Year]]></title>
+            <link>https://enxtur.github.io/2026/01/01/happy-new-year</link>
+            <guid>https://enxtur.github.io/2026/01/01/happy-new-year</guid>
+            <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Reflecting on 2025 and looking forward to 2026]]></description>
+            <content:encoded><![CDATA[<p>Happy New Year 🎉</p>
+<p>2025 was that kind of year. I was informed that our team and eventually the whole department would be laid off by the end of the year. It forced me to pause, reflect, and then double down.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="building-through-uncertainty">Building Through Uncertainty<a href="https://enxtur.github.io/2026/01/01/happy-new-year#building-through-uncertainty" class="hash-link" aria-label="Direct link to Building Through Uncertainty" title="Direct link to Building Through Uncertainty" translate="no">​</a></h2>
+<p>Since then, I've been putting serious hours into my side projects.</p>
+<p>The main one is <a href="https://msngrbot.com/" target="_blank" rel="noopener noreferrer" class="">msngrbot.com</a>, a SaaS that helps small businesses manage appointments directly through Facebook Messenger. Along the way, I founded a Delaware C-Corp and decided to fully commit to building it, no matter what.</p>
+<p>Another project is <a href="https://interview-aloud.tech/" target="_blank" rel="noopener noreferrer" class="">interview-aloud.tech</a>. Like many developers, I've struggled to explain technical concepts fluently during interviews even when I knew them well. So I built a tool based on a "shadowing" approach to practice speaking about tech topics out loud. It helped me, and I decided to share it with fellow developers. It's free and open to contributions.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="looking-ahead">Looking Ahead<a href="https://enxtur.github.io/2026/01/01/happy-new-year#looking-ahead" class="hash-link" aria-label="Direct link to Looking Ahead" title="Direct link to Looking Ahead" translate="no">​</a></h2>
+<p>2026 for me is about consistency, building in public, and turning uncertainty into momentum.</p>
+<p>If you're building something, job hunting, or just figuring things out, let's connect.</p>
+<p>Wishing you all a healthy, resilient, and productive New Year 🚀</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Almost Fell for a Fake Job Opportunity on LinkedIn]]></title>
             <link>https://enxtur.github.io/2025/10/07/scam-job-offer</link>
