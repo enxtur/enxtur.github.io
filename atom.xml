@@ -2,11 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://enxtur.github.io</id>
     <title>Enkhtur Enkhbat Blog</title>
-    <updated>2026-01-10T00:00:00.000Z</updated>
+    <updated>2026-01-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://enxtur.github.io"/>
     <subtitle>Enkhtur Enkhbat Blog</subtitle>
     <icon>https://enxtur.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Shipping Production From My Phone]]></title>
+        <id>https://enxtur.github.io/2026/01/14/deploy-from-mobile</id>
+        <link href="https://enxtur.github.io/2026/01/14/deploy-from-mobile"/>
+        <updated>2026-01-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A small moment that perfectly sums up modern dev workflows]]></summary>
+        <content type="html"><![CDATA[<p>I was out running some errands when I got an idea for a new topic for Interview Aloud.</p>
+<p>Nothing fancy. Just one of those “this would be useful” thoughts.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="from-idea-to-pr-on-a-phone">From Idea to PR (on a Phone)<a href="https://enxtur.github.io/2026/01/14/deploy-from-mobile#from-idea-to-pr-on-a-phone" class="hash-link" aria-label="Direct link to From Idea to PR (on a Phone)" title="Direct link to From Idea to PR (on a Phone)" translate="no">​</a></h2>
+<p>I opened ChatGPT and discussed the topic briefly to shape it better.<br>
+<!-- -->Then I thought: why not just add it now?</p>
+<p>I opened the GitHub mobile app, edited a Markdown file, committed the change, and opened a PR.</p>
+<p>The project is intentionally set up so that:</p>
+<ul>
+<li class="">Content lives in Markdown</li>
+<li class="">Any MD change triggers a Next.js build</li>
+<li class="">Static pages and OG images are generated automatically</li>
+<li class="">Docker images are built and pushed on merge</li>
+</ul>
+<p>So after the PR was merged, the build pipeline did its job flawlessly.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-deployment-bottleneck">The Deployment Bottleneck<a href="https://enxtur.github.io/2026/01/14/deploy-from-mobile#the-deployment-bottleneck" class="hash-link" aria-label="Direct link to The Deployment Bottleneck" title="Direct link to The Deployment Bottleneck" translate="no">​</a></h2>
+<p>There was only one problem.</p>
+<p>Deployment was still a <strong>manual step on my personal server</strong>.<br>
+<!-- -->Which meant I couldn’t finish the loop from my phone.</p>
+<p>That’s when it became obvious: this is exactly what Vercel is good at.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="letting-the-platform-do-the-work">Letting the Platform Do the Work<a href="https://enxtur.github.io/2026/01/14/deploy-from-mobile#letting-the-platform-do-the-work" class="hash-link" aria-label="Direct link to Letting the Platform Do the Work" title="Direct link to Letting the Platform Do the Work" translate="no">​</a></h2>
+<p>I integrated Vercel with the repository, transferred the domain, and removed the last manual step.</p>
+<p>From that moment:</p>
+<ul>
+<li class="">Push to main</li>
+<li class="">Automatic build</li>
+<li class="">Automatic deployment</li>
+<li class="">Live site</li>
+</ul>
+<p>No SSH. No servers. No laptop.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-small-but-powerful-realization">A Small but Powerful Realization<a href="https://enxtur.github.io/2026/01/14/deploy-from-mobile#a-small-but-powerful-realization" class="hash-link" aria-label="Direct link to A Small but Powerful Realization" title="Direct link to A Small but Powerful Realization" translate="no">​</a></h2>
+<p>All of this — idea, content, PR, merge, deployment — happened from my phone.</p>
+<p>This isn’t about productivity hacks.<br>
+<!-- -->It’s about designing systems that <strong>don’t depend on you being at a desk</strong>.</p>
+<p>Modern tooling makes this possible.<br>
+<!-- -->Our job is to wire it together properly.</p>
+<p>And when you do — it just works.</p>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why I built interview-aloud]]></title>
         <id>https://enxtur.github.io/2026/01/10/interview-aloud-tech</id>
