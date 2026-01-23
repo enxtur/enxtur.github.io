@@ -4,10 +4,77 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Wed, 14 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 24 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Why I Added Pre-Generated Audio to Interview Aloud]]></title>
+            <link>https://enxtur.github.io/2026/01/24/text-to-speech</link>
+            <guid>https://enxtur.github.io/2026/01/24/text-to-speech</guid>
+            <pubDate>Sat, 24 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Improving audio quality and consistency for interview practice by generating speech at build time]]></description>
+            <content:encoded><![CDATA[<p>One of the core ideas behind <a href="https://interview-aloud.tech/" target="_blank" rel="noopener noreferrer" class="">interview-aloud</a> is simple:<br>
+<strong>knowing an answer isn’t the same as being able to say it out loud.</strong></p>
+<p>Reading silently gives you a false sense of confidence. Speaking forces clarity. That’s why audio matters in this project.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-problem-with-built-in-speech-synthesis">The problem with built-in speech synthesis<a href="https://enxtur.github.io/2026/01/24/text-to-speech#the-problem-with-built-in-speech-synthesis" class="hash-link" aria-label="Direct link to The problem with built-in speech synthesis" title="Direct link to The problem with built-in speech synthesis" translate="no">​</a></h2>
+<p>At first, Interview Aloud relied entirely on the browser’s built-in speech synthesis APIs. They’re convenient and widely available, but in practice they come with some real issues:</p>
+<ul>
+<li class="">The voice often sounds <strong>robotic and unnatural</strong></li>
+<li class="">Quality varies <strong>a lot</strong> between browsers and operating systems</li>
+<li class="">The same content can sound completely different on a Mac, Windows machine, or mobile device</li>
+<li class="">Some voices are fast, some are flat, some are hard to follow</li>
+</ul>
+<p>This inconsistency breaks the learning experience. When you’re practicing interview answers, your brain is already busy structuring thoughts — fighting against poor audio quality doesn’t help.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-i-wanted-instead">What I wanted instead<a href="https://enxtur.github.io/2026/01/24/text-to-speech#what-i-wanted-instead" class="hash-link" aria-label="Direct link to What I wanted instead" title="Direct link to What I wanted instead" translate="no">​</a></h2>
+<p>I wanted audio that is:</p>
+<ul>
+<li class="">More <strong>human-like</strong></li>
+<li class=""><strong>Consistent</strong> across devices</li>
+<li class="">Predictable and controlled</li>
+<li class="">Available instantly without runtime surprises</li>
+</ul>
+<p>At the same time, I didn’t want to introduce runtime complexity, latency, or ongoing infrastructure costs just to play audio.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="choosing-google-cloud-text-to-speech">Choosing Google Cloud Text-to-Speech<a href="https://enxtur.github.io/2026/01/24/text-to-speech#choosing-google-cloud-text-to-speech" class="hash-link" aria-label="Direct link to Choosing Google Cloud Text-to-Speech" title="Direct link to Choosing Google Cloud Text-to-Speech" translate="no">​</a></h2>
+<p>I decided to use Google Cloud Text-to-Speech for generating the audio.</p>
+<p>Two reasons made it a good fit for this project:</p>
+<ul>
+<li class="">The voices sound noticeably <strong>more natural</strong> than most built-in browser options</li>
+<li class="">The free tier is <strong>very generous</strong>, especially for a static-content use case like this</li>
+</ul>
+<p>Since Interview Aloud is mostly text-based and changes infrequently, this approach keeps costs low while still improving quality significantly.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-solution-pre-generated-audio-at-build-time">The solution: pre-generated audio at build time<a href="https://enxtur.github.io/2026/01/24/text-to-speech#the-solution-pre-generated-audio-at-build-time" class="hash-link" aria-label="Direct link to The solution: pre-generated audio at build time" title="Direct link to The solution: pre-generated audio at build time" translate="no">​</a></h2>
+<p>Instead of generating audio on demand, everything happens during the build:</p>
+<ul>
+<li class="">Audio is generated <strong>at build time</strong></li>
+<li class="">Each interview topic maps to a deterministic audio file name</li>
+<li class="">Files are stored in the <code>public</code> directory and served statically</li>
+<li class="">If an audio file already exists, generation is <strong>skipped</strong></li>
+<li class="">Playback always prefers the pre-generated audio</li>
+<li class="">Browser speech synthesis is kept as a <strong>fallback</strong> when audio files are missing</li>
+</ul>
+<p>This makes the system very cost-effective:</p>
+<ul>
+<li class="">No runtime API calls</li>
+<li class="">No repeated TTS requests for the same content</li>
+<li class="">No surprise bills from traffic spikes</li>
+</ul>
+<p>Once an audio file exists, it’s reused forever unless the content changes.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="refactoring-without-breaking-things">Refactoring without breaking things<a href="https://enxtur.github.io/2026/01/24/text-to-speech#refactoring-without-breaking-things" class="hash-link" aria-label="Direct link to Refactoring without breaking things" title="Direct link to Refactoring without breaking things" translate="no">​</a></h2>
+<p>Under the hood, the speech logic was refactored so that:</p>
+<ol>
+<li class="">Pre-generated audio is always checked first</li>
+<li class="">Existing speech synthesis behavior remains intact</li>
+<li class="">The rest of the app doesn’t need to know which path is used</li>
+</ol>
+<p>This keeps backward compatibility and makes the feature additive rather than disruptive.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-this-matters-for-interview-practice">Why this matters for interview practice<a href="https://enxtur.github.io/2026/01/24/text-to-speech#why-this-matters-for-interview-practice" class="hash-link" aria-label="Direct link to Why this matters for interview practice" title="Direct link to Why this matters for interview practice" translate="no">​</a></h2>
+<p>Interviews are stressful partly because they’re <strong>spoken</strong>, not written.<br>
+<!-- -->Hearing a clear, natural explanation — then responding out loud — helps train the right mental pathways.</p>
+<p>This change isn’t flashy, but it improves the core experience in a way that aligns closely with why Interview Aloud exists in the first place.</p>
+<p>More consistency. Less friction. Better practice.</p>
+<p>That’s the goal.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Shipping Production From My Phone]]></title>
             <link>https://enxtur.github.io/2026/01/14/deploy-from-mobile</link>
