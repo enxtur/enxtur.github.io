@@ -2,11 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://enxtur.github.io</id>
     <title>Enkhtur Enkhbat Blog</title>
-    <updated>2026-01-24T00:00:00.000Z</updated>
+    <updated>2026-01-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://enxtur.github.io"/>
     <subtitle>Enkhtur Enkhbat Blog</subtitle>
     <icon>https://enxtur.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Why (and How) I Built My Own Nx Remote Cache Server]]></title>
+        <id>https://enxtur.github.io/building-nx-caching-server</id>
+        <link href="https://enxtur.github.io/building-nx-caching-server"/>
+        <updated>2026-01-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Nx Cloud's free tier is great, but not quite enough for my monorepo. So I made a simple filesystem-based alternative in Go — no extra infra required.]]></summary>
+        <content type="html"><![CDATA[<p>I really like Nx — the monorepo tooling is solid, and Nx Cloud's free tier is actually pretty generous. But for my current project it's still not enough, and the project isn't profitable yet to justify paying for more cache minutes or storage.</p>
+<p>I checked out some existing custom remote cache solutions, but almost every one requires you to bring your own S3 bucket, GCS, or some other cloud storage. That means extra infrastructure, credentials to manage, potential costs... just more moving parts I didn't want to deal with right now.</p>
+<p>Then I noticed Nx publishes a clean OpenAPI spec for their remote cache API. It looked straightforward enough — I figured I could implement a basic server that just uses the local filesystem in a day or two at most, without pulling me too far away from my actual work.</p>
+<p>So that's what I ended up doing: <a href="https://github.com/enxtur/nx-caching-server" target="_blank" rel="noopener noreferrer" class="">nx-caching-server</a> (also published on Docker Hub as <code>enxtur/nx-caching-server</code>).</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-go-instead-of-nodets">Why Go instead of Node/TS?<a href="https://enxtur.github.io/building-nx-caching-server#why-go-instead-of-nodets" class="hash-link" aria-label="Direct link to Why Go instead of Node/TS?" title="Direct link to Why Go instead of Node/TS?" translate="no">​</a></h3>
+<p>My main stack is Node + TypeScript, but the API spec felt <em>perfect</em> for Go: clean structs, straightforward http handling, JSON without boilerplate. Plus I wanted to brush up on my Go skills anyway — it's been a while, and I didn't want them to get too rusty.</p>
+<p>The result is dead simple: give it a folder to store cache artifacts, and that's it. No Redis, no buckets, no databases, no extra third-party services. Exactly the zero-pain setup I was after.</p>
+<p>I've already wired it into my project's CI/CD pipeline — cache hits are working nicely, build times are noticeably down, and it feels reliable so far.</p>
+<p>If you're in a similar spot (Nx monorepo, not ready for Nx Cloud paid tier, and allergic to provisioning cloud storage just for caching), give it a try. It's MIT licensed, so fork it, tweak it, open PRs if you spot improvements or run into issues.</p>
+<p>Repo: <a href="https://github.com/enxtur/nx-caching-server" target="_blank" rel="noopener noreferrer" class="">https://github.com/enxtur/nx-caching-server</a><br>
+<!-- -->Docker: <code>docker pull enxtur/nx-caching-server</code></p>
+<p>Feedback welcome — especially if you deploy it somewhere real or hit any edge cases.</p>]]></content>
+        <author>
+            <name>Enkhtur Enkhbat</name>
+            <uri>https://enxtur.github.io</uri>
+        </author>
+        <category label="Nx" term="Nx"/>
+        <category label="Monorepo" term="Monorepo"/>
+        <category label="Caching" term="Caching"/>
+        <category label="Go" term="Go"/>
+        <category label="Devtools" term="Devtools"/>
+        <category label="Build in Public" term="Build in Public"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Why I Added Pre-Generated Audio to Interview Aloud]]></title>
         <id>https://enxtur.github.io/2026/01/24/text-to-speech</id>
