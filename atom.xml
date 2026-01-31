@@ -41,8 +41,8 @@
             <uri>https://enxtur.github.io</uri>
         </author>
         <category label="SEO" term="SEO"/>
-        <category label="GoogleSearchConsole" term="GoogleSearchConsole"/>
-        <category label="WebDev" term="WebDev"/>
+        <category label="Google Search Console" term="Google Search Console"/>
+        <category label="Web Developmentß" term="Web Developmentß"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Why (and How) I Built My Own Nx Remote Cache Server]]></title>
