@@ -4,10 +4,43 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Tue, 27 Jan 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Feb 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Silent Killer Issues When Integrating Your Site with Google Search Console]]></title>
+            <link>https://enxtur.github.io/google-search-console-silent-issues-tips</link>
+            <guid>https://enxtur.github.io/google-search-console-silent-issues-tips</guid>
+            <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Quick tips to avoid common silent failures in Google Search Console like canonical mismatches, sitemaps, and robots.txt. Fixed my own headaches—hope it helps yours!]]></description>
+            <content:encoded><![CDATA[<p>I've been falling into some silent killer issues with Google Search Console lately. Sharing a few quick tips that actually saved me.</p>
+<p>I'm sure you already registered your property in Search Console and implemented sitemap.xml + robots.txt.<br>
+<!-- -->If not → set it up right away, seriously.</p>
+<ul>
+<li class="">Add your site as URL-prefix property (<a href="https://www.yoursite.com/" target="_blank" rel="noopener noreferrer" class="">https://www.yoursite.com</a> or <a href="https://yoursite.com/" target="_blank" rel="noopener noreferrer" class="">https://yoursite.com</a>)</li>
+<li class="">Submit sitemap.xml in the Sitemaps section</li>
+<li class="">Make sure robots.txt exists at yoursite.com/robots.txt and includes</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token plain">Sitemap: https://yoursite.com/sitemap.xml</span><br></span></code></pre></div></div>
+<p>Google finds your pages much faster this way.</p>
+<p>The most common silent failure though is canonical / URL mismatch.<br>
+<!-- -->You see "Page with redirect", "Duplicate, Google chose different canonical" or similar errors?<br>
+<!-- -->Almost always means: the URL in your sitemap is not exactly the same as the real live URL Google sees.</p>
+<p>Common traps:</p>
+<ul>
+<li class="">You redirect everything to <a href="http://www.yoursite.com/" target="_blank" rel="noopener noreferrer" class="">www.yoursite.com</a> but sitemap has non-www links → add www to every URL in sitemap</li>
+<li class="">Or opposite: you use non-www but sitemap has www → remove www everywhere</li>
+<li class="">Your pages end with / (yoursite.com/about/) but sitemap has no slash (yoursite.com/about) → add or remove the trailing slash so they match 100%</li>
+</ul>
+<p>Quick fix: open your sitemap, copy one URL, paste in browser → see where it actually lands. Then make sitemap match that final URL exactly.</p>
+<p>After fixes, go to URL Inspection tool, test a few pages, hit "Request Indexing".<br>
+<!-- -->Then just watch the Coverage report – errors usually disappear in a few days if everything is consistent.</p>
+<p>Hope this saves someone a few gray hairs 😅</p>]]></content:encoded>
+            <category>SEO</category>
+            <category>GoogleSearchConsole</category>
+            <category>WebDev</category>
+        </item>
         <item>
             <title><![CDATA[Why (and How) I Built My Own Nx Remote Cache Server]]></title>
             <link>https://enxtur.github.io/building-nx-caching-server</link>
