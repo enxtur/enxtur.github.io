@@ -4,7 +4,7 @@
         <title>Enkhtur Enkhbat Blog</title>
         <link>https://enxtur.github.io</link>
         <description>Enkhtur Enkhbat Blog</description>
-        <lastBuildDate>Sun, 01 Feb 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 31 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Silent Killer Issues When Integrating Your Site with Google Search Console]]></title>
             <link>https://enxtur.github.io/google-search-console-silent-issues-tips</link>
             <guid>https://enxtur.github.io/google-search-console-silent-issues-tips</guid>
-            <pubDate>Sun, 01 Feb 2026 00:00:00 GMT</pubDate>
+            <pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Quick tips to avoid common silent failures in Google Search Console like canonical mismatches, sitemaps, and robots.txt. Fixed my own headaches—hope it helps yours!]]></description>
             <content:encoded><![CDATA[<p>I've been falling into some silent killer issues with Google Search Console lately. Sharing a few quick tips that actually saved me.</p>
 <p>I'm sure you already registered your property in Search Console and implemented sitemap.xml + robots.txt.<br>
