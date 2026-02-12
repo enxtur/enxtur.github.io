@@ -26,6 +26,13 @@
 <p>At some point I realized I don’t actually enjoy writing JSX for marketing pages.</p>
 <p>I enjoy building product logic.</p>
 <p>So I started extracting a small framework.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="links">Links<a href="https://enxtur.github.io/building-landing-kit#links" class="hash-link" aria-label="Direct link to Links" title="Direct link to Links" translate="no">​</a></h2>
+<ul>
+<li class="">GitHub: <a href="https://github.com/enxtur/landing-kit" target="_blank" rel="noopener noreferrer" class="">https://github.com/enxtur/landing-kit</a></li>
+<li class="">Home page: <a href="https://enxtur.github.io/landing-kit/" target="_blank" rel="noopener noreferrer" class="">https://enxtur.github.io/landing-kit/</a></li>
+<li class="">npm: <a href="https://www.npmjs.com/package/create-landing-kit" target="_blank" rel="noopener noreferrer" class="">https://www.npmjs.com/package/create-landing-kit</a></li>
+<li class="">Live demo: <a href="https://landing-kit-demo.vercel.app/" target="_blank" rel="noopener noreferrer" class="">https://landing-kit-demo.vercel.app/</a></li>
+</ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-idea">The Idea<a href="https://enxtur.github.io/building-landing-kit#the-idea" class="hash-link" aria-label="Direct link to The Idea" title="Direct link to The Idea" translate="no">​</a></h2>
 <p>A simple rule:</p>
 <blockquote>
