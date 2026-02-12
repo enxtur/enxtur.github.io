@@ -2,11 +2,98 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://enxtur.github.io</id>
     <title>Enkhtur Enkhbat Blog</title>
-    <updated>2026-01-31T00:00:00.000Z</updated>
+    <updated>2026-02-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://enxtur.github.io"/>
     <subtitle>Enkhtur Enkhbat Blog</subtitle>
     <icon>https://enxtur.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Building a Config-Based Landing Page Framework]]></title>
+        <id>https://enxtur.github.io/building-landing-kit</id>
+        <link href="https://enxtur.github.io/building-landing-kit"/>
+        <updated>2026-02-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Extracting a small framework from my own side projects. Config in, static site out.]]></summary>
+        <content type="html"><![CDATA[<p>I kept rewriting landing pages for my side projects.</p>
+<p>Every time:</p>
+<ul>
+<li class="">new repo</li>
+<li class="">copy old layout</li>
+<li class="">tweak styles</li>
+<li class="">adjust sections</li>
+<li class="">repeat</li>
+</ul>
+<p>At some point I realized I don’t actually enjoy writing JSX for marketing pages.</p>
+<p>I enjoy building product logic.</p>
+<p>So I started extracting a small framework.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-idea">The Idea<a href="https://enxtur.github.io/building-landing-kit#the-idea" class="hash-link" aria-label="Direct link to The Idea" title="Direct link to The Idea" translate="no">​</a></h2>
+<p>A simple rule:</p>
+<blockquote>
+<p>Pages are config, not components.</p>
+</blockquote>
+<p>Instead of writing React components for every section, you define your site in a single <code>site.config.ts</code>.</p>
+<p>Example:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">export</span><span class="token plain"> </span><span class="token keyword" style="color:rgb(189, 147, 249);font-style:italic">default</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">defineSite</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  pages</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token string-property property">"/"</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">      sections</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"> type</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">"hero"</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> heading</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">"Build fast"</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">        </span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token plain"> type</span><span class="token operator">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(255, 121, 198)">"features"</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"> items</span><span class="token operator">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">[</span><span class="token operator">...</span><span class="token punctuation" style="color:rgb(248, 248, 242)">]</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">      </span><span class="token punctuation" style="color:rgb(248, 248, 242)">]</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">    </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain">  </span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token punctuation" style="color:rgb(248, 248, 242)">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#F8F8F2"><span class="token plain"></span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">;</span><br></span></code></pre></div></div>
+<p>That’s it.</p>
+<p>The framework handles:</p>
+<ul>
+<li class="">routing</li>
+<li class="">rendering</li>
+<li class="">meta tags</li>
+<li class="">sitemap</li>
+<li class="">robots.txt</li>
+<li class="">static generation</li>
+</ul>
+<p>No CMS.<br>
+<!-- -->No drag and drop.<br>
+<!-- -->No visual editor.</p>
+<p>Just config → build → deploy.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-im-building-this">Why I’m Building This<a href="https://enxtur.github.io/building-landing-kit#why-im-building-this" class="hash-link" aria-label="Direct link to Why I’m Building This" title="Direct link to Why I’m Building This" translate="no">​</a></h2>
+<p>I’m usually busy building backend logic or product features.</p>
+<p>Landing pages feel like context switching.</p>
+<p>This is for developers who:</p>
+<ul>
+<li class="">don’t want to think about layout structure</li>
+<li class="">don’t want to write JSX for marketing sections</li>
+<li class="">just want something clean and static</li>
+</ul>
+<p>It’s opinionated on purpose.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-it-is-not">What It Is Not<a href="https://enxtur.github.io/building-landing-kit#what-it-is-not" class="hash-link" aria-label="Direct link to What It Is Not" title="Direct link to What It Is Not" translate="no">​</a></h2>
+<p>It’s not:</p>
+<ul>
+<li class="">a blog engine</li>
+<li class="">a no-code builder</li>
+<li class="">a website platform</li>
+<li class="">a full framework replacement</li>
+</ul>
+<p>It’s just a small tool to ship marketing sites faster.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="current-status">Current Status<a href="https://enxtur.github.io/building-landing-kit#current-status" class="hash-link" aria-label="Direct link to Current Status" title="Direct link to Current Status" translate="no">​</a></h2>
+<p>Early stage.</p>
+<p>Right now it supports:</p>
+<ul>
+<li class="">multi-page sites</li>
+<li class="">predefined sections</li>
+<li class="">CSS-only templates</li>
+<li class="">static output</li>
+<li class="">a Next.js wrapper under the hood</li>
+</ul>
+<p>Still rough.<br>
+<!-- -->Still evolving.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-open-source">Why Open Source?<a href="https://enxtur.github.io/building-landing-kit#why-open-source" class="hash-link" aria-label="Direct link to Why Open Source?" title="Direct link to Why Open Source?" translate="no">​</a></h2>
+<p>Because I’m building it for myself first.</p>
+<p>If it helps other developers, great.</p>
+<p>If not, I still get a reusable foundation for future projects.</p>
+<p>Win either way.</p>
+<hr>
+<p>If you’re busy building product logic and don’t want to spend time on landing pages, this might eventually be useful.</p>
+<p>I’m building it in public.</p>]]></content>
+        <category label="landing-page" term="landing-page"/>
+        <category label="framework" term="framework"/>
+        <category label="config" term="config"/>
+        <category label="static-site" term="static-site"/>
+        <category label="Devtools" term="Devtools"/>
+        <category label="Build in Public" term="Build in Public"/>
+        <category label="landing-kit" term="landing-kit"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Silent Killer Issues When Integrating Your Site with Google Search Console]]></title>
         <id>https://enxtur.github.io/google-search-console-silent-issues-tips</id>
