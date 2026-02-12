@@ -93,13 +93,13 @@
 <hr>
 <p>If you’re busy building product logic and don’t want to spend time on landing pages, this might eventually be useful.</p>
 <p>I’m building it in public.</p>]]></content>
-        <category label="landing-page" term="landing-page"/>
-        <category label="framework" term="framework"/>
-        <category label="config" term="config"/>
-        <category label="static-site" term="static-site"/>
+        <category label="Landing Page" term="Landing Page"/>
+        <category label="Framework" term="Framework"/>
+        <category label="Config" term="Config"/>
+        <category label="Static Site" term="Static Site"/>
         <category label="Devtools" term="Devtools"/>
         <category label="Build in Public" term="Build in Public"/>
-        <category label="landing-kit" term="landing-kit"/>
+        <category label="Landing Kit" term="Landing Kit"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Silent Killer Issues When Integrating Your Site with Google Search Console]]></title>
